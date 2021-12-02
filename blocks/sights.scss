@@ -1,0 +1,101 @@
+.sights {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 47px;
+  }
+}
+
+.sights__list {
+  @include list-style;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 27px 0 96px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+}
+
+.sights__inner {
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid $line-grey;
+  }
+}
+
+.sights__title {
+  padding-top: 15px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    width: 401px;
+    font-size: 21px;
+    line-height: 26px;
+    padding-top: 4px;
+    padding-bottom: 0;
+    margin-bottom: 14px;
+  }
+}
+
+.sights__label {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: none;
+  padding-bottom: 25px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  padding-right: 44px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+}
+
+.sights__option {
+  text-align: start;
+  position: relative;
+}
+
+.sights__input-checkbox {
+  display: none;
+}
+
+.sights__input-checkbox + label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    width: 55px;
+    height: 55px;
+    margin-right: 26px;
+    border-radius: 1%;
+    background-repeat: no-repeat;
+    background-color: $extralight-grey;
+  }
+}
+
+.sights__input-checkbox:checked + label {
+  &::before {
+    background-image: url("../img/tick.svg");
+    background-size: 23px 17px;
+    background-position: center;
+  }
+}

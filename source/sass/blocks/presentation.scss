@@ -1,0 +1,263 @@
+.presentation__title {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 28px;
+  margin-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-top: 53px;
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 60px;
+    margin-bottom: 32px;
+  }
+}
+
+.presentation__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-left: 28px;
+  margin-right: 26px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 445px;
+    margin: 0 auto;
+    margin-bottom: 79px;
+  }
+}
+
+.presentation__video {
+  background-image: url("../img/video-s.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  height: 201px;
+  position: relative;
+  margin-bottom: 145px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-s@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/video-m.jpg");
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 76px;
+    width: 648px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-m@2x.jpg");
+      background-size: cover;
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/video-l.jpg");
+    margin-bottom: 121px;
+    width: 800px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-l@2x.jpg");
+      background-size: cover;
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+  }
+}
+
+.presentation__controls {
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, 100%);
+  left: 50%;
+  background-color: $extralight-grey;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 66px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    transform: translate(-50%, 0);
+    background-color: transparent;
+    width: 100%;
+    height: 93px;
+  }
+}
+
+.presentation__scale {
+  position: absolute;
+  height: 45px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 280px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    height: 93px;
+    width: 648px;
+    padding-top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
+.presentation__video-bar {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 3px;
+  left: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 235px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 389px;
+    margin-left: -36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 540px;
+  }
+}
+
+.presentation__toggle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 57px;
+  border: 5px solid $white;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    left: 35%;
+    border: 4px solid $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 26%;
+
+    @media (min-resolution: 2dppx) {
+      left: 26%;
+    }
+  }
+}
+
+.presentation__wrapper {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 17px;
+  padding-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 32px;
+    transform: translateY(50%);
+  }
+}
+
+.presentation__wrapper-buttons {
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 648px;
+    margin-left: 60px;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 6%;
+    left: 0;
+    align-items: center;
+
+    @media (min-resolution: 2dppx) {
+      margin-left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 349px;
+
+      @media (min-resolution: 2dppx) {
+        margin-left: 147px;
+      }
+    }
+  }
+}
+
+.presentation__button {
+  border: none;
+
+  svg {
+    fill: $mobile-controls;
+
+    &:hover {
+      fill: $hover-mobiles;
+    }
+
+    &:active {
+      fill: $hover-mobiles;
+      opacity: 0.3;
+    }
+
+    @media (min-width: $tablet-width) {
+      fill: $white;
+
+      &:hover {
+        fill: $white;
+        opacity: 0.6;
+      }
+
+      &:active {
+        fill: $white;
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.presentation__subtitles {
+  margin-left: 106px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    background: none;
+    margin-left: 432px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 591px;
+  }
+}
+
+.presentation__replay {
+  @media (min-width: $tablet-width) {
+    background: none;
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.presentation__fulscreen {
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
+}

@@ -1,0 +1,45 @@
+
+
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback__contacts-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.feedback__feedback-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+.feedback__personal-impression {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+}
+
+.feedback__fieldset {
+  border: none;
+  border-bottom: 1px solid $line-grey;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    width: 100%;
+  }
+}

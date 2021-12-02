@@ -1,0 +1,54 @@
+.emotion__textarea {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+  text-align: start;
+  font-weight: 700;
+  font-family: inherit;
+  border: none;
+  background-color: $extralight-grey;
+  padding: 12px 23px 0 21px;
+  height: 160px;
+  width: 100%;
+
+  &::placeholder {
+    color: $black;
+  }
+
+  &:hover {
+    background-color: $disabled;
+  }
+
+  &:focus {
+    background-color: $white;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 19px 23px 0 21px;
+  }
+}
+
+.emotion__title {
+  padding-top: 20px;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 62px;
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 59px;
+    padding-right: 61px;
+  }
+}
+
+.emotion__inner {
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid $line-grey;
+  }
+}

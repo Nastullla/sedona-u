@@ -1,0 +1,11 @@
+.map {
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+}
+
+.map__interactive {
+  width: 100%;
+}

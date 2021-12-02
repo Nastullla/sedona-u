@@ -1,0 +1,124 @@
+.advantages {
+  margin-bottom: 22px;
+  margin-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 37px;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 37px;
+    margin-bottom: 80px;
+  }
+}
+
+.advantages__title {
+  margin-top: 4px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    font-size: 21px;
+  }
+}
+
+.advantages__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: start;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 193px;
+    text-align: center;
+    padding-top: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 292px;
+
+    br {
+      display: block;
+    }
+  }
+}
+
+.advantages__list {
+  @include list-style;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.advantages__item {
+  padding-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+
+    &--change-text .advantages__text {
+      width: 155px;
+
+      @media (min-width: $desktop-width) {
+        width: 292px;
+      }
+    }
+
+    &--change-order {
+      order: 3;
+
+      &--change-order .advantages__text {
+        @media (min-width: $desktop-width) {
+          width: 280px;
+        }
+      }
+    }
+  }
+}
+
+.advantages__wrapper {
+  @media (min-width: $tablet-width) {
+    margin: 0 -30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 -65px;
+  }
+}
+
+.advantages__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-top: 22px;
+  }
+}
+
+.advantages__item img {
+  position: absolute;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    width: 75px;
+    height: 72px;
+  }
+}

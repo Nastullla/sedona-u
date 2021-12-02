@@ -1,0 +1,97 @@
+.feature {
+  background-color: $blue;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+
+  &--city::before {
+    position: absolute;
+    content: url("../img/white-triangle-s.svg");
+    top: -20px;
+    transform: translateX(-50%);
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.feature__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  .feature--bridge & {
+    flex-direction: row-reverse;
+  }
+}
+
+.feature__text-part {
+  padding: 54px 17px 36px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 32px 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 52px 68px 53px;
+  }
+}
+
+.feature__title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 26px;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 14px;
+  }
+}
+
+.feature__number {
+  display: block;
+  margin-bottom: 13px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.feature__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $white;
+
+  .feature--bridge & {
+    @media (min-width: $tablet-width) {
+      padding: 0 16px;
+    }
+  }
+}
+
+.feature__img {
+  line-height: 0;
+  width: auto;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    min-width: 512px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 800px;
+  }
+}

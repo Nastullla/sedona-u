@@ -1,0 +1,92 @@
+.impression {
+  @media (min-width: $tablet-width) {
+    border: none;
+    border-right: 1px solid $line-grey;
+    width: 50%;
+  }
+}
+
+.impression__title {
+  margin-bottom: 27px;
+  padding-top: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 303px;
+    padding-top: 0;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: start;
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 352px;
+    text-align: end;
+  }
+}
+
+.impression__list {
+  @include list-style;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.impression__option {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 33px;
+    }
+  }
+}
+
+.impression__option label {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.impression__input-radio {
+  display: none;
+}
+
+.impression__input-radio + label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    width: 53px;
+    height: 53px;
+    margin-right: 23px;
+    border: 15px solid $extralight-grey;
+    border-radius: 50%;
+    background-color: $extralight-grey;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 4px;
+    }
+  }
+}
+
+.impression__input-radio:checked + label {
+  &::before {
+    background-color: $hover-mobiles;
+  }
+}
